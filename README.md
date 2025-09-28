@@ -8,4 +8,6 @@ All database applications, old and new, share important common elements. The cen
 Database systems are used to manage collections of data that:
 - are highly valuable
 - are relatively large, and
-- are accessed by multiple users and applications, often at the same time.
+- are accessed by multiple users and applications, often at the same time.  
+
+Modern database systems exploit commonalities in the structure of data to gain efficiency but also allow for weakly structured data and for data whose formats are highly variable. As a result, a database system is a large, complex software system whose task is to manage a large, complex collection of data.

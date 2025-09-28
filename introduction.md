@@ -2,7 +2,7 @@
 A **database-management system (DBMS)** is a collection of interrelated data and a set of programs to access those data. The collection of data, usually referred to as the **database**, contains information relevant to an enterprise. The primary goal of a DBMS is to provide a way to store and retrieve database information that is both convenient and efficient.  
 &nbsp;&nbsp;&nbsp;&nbsp;Database systems are designed to manage large bodies of information. Management of data involves both defining structures for storage of information and providing mechanisms for the manipulation of information. In addition, the database system must ensure the safety of the information stored, despite system crashes or attempts at unauthorized access. If data are to be shared among several users, the system must avoid possible anomalous results.
 
-### Database-System Applications
+### Database-System Applications:
 All database applications, old and new, share important common elements. The central aspect of the application is not a program performing some calculation, but rather the data themselves. Today, some of the most valuable corporations are valuable not because of their physical assets, but rather because of the information they own.  
 
 Database systems are used to manage collections of data that:
@@ -27,7 +27,7 @@ For example, banks need to decide whether to give a loan to a loan applicant, on
 #### Data Mining:
 The field of *data mining* combines knowledge-discovery techniques invented by artificial intelligence researchers and statistical analysts with efficient implementation techniques that enable them to be used on extremely large databases.
 
-### Purpose of Database Systems
+### Purpose of Database Systems:
 To understand the purpose of database systems, consider part of a university organization that, among other data, keeps information about all instructors, students, departments, and course offerings. One way to keep the information on a computer is to store it in operating-system files. To allow users to manipulate the information, the system has a number of application programs that manipulate the files, including programs to:
 - Add new students, instructors, and courses.
 - Register students for courses and generate class rosters.
@@ -46,5 +46,9 @@ Keeping organizational information in a file-processing system has a number of m
   - Concurrent-access anomalies.
   - Security problems.
 
-### View of Data
+## View of Data
 A database system is a collection of interrelated data and a set of programs that allow users to access and modify these data. A major purpose of a database system is to provide users with an *abstract* view of the data. That is, the system hides certain details of how the data are stored and maintained.
+
+### Data Models:
+Underlying the structure of a database is the **data model**: a collection of conceptual tools for describing data, data
+relationships, data semantics, and consistency constraints. 

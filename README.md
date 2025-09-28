@@ -31,4 +31,6 @@ The field of *data mining* combines knowledge-discovery techniques invented by a
 To understand the purpose of database systems, consider part of a university organization that, among other data, keeps information about all instructors, students, departments, and course offerings. One way to keep the information on a computer is to store it in operating-system files. To allow users to manipulate the information, the system has a number of application programs that manipulate the files, including programs to:
 - Add new students, instructors, and courses.
 - Register students for courses and generate class rosters.
-- Assign grades to students, compute grade point averages (GPA), and generate transcripts.
+- Assign grades to students, compute grade point averages (GPA), and generate transcripts.  
+
+Programmers develop these application programs to meet the needs of the university, and new application programs are added to the system as the need arises. New application programs may also have to be written to handle new rules in the university. Thus, as time goes by, the system acquires more files and more application programs.

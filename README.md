@@ -33,4 +33,6 @@ To understand the purpose of database systems, consider part of a university org
 - Register students for courses and generate class rosters.
 - Assign grades to students, compute grade point averages (GPA), and generate transcripts.  
 
-Programmers develop these application programs to meet the needs of the university, and new application programs are added to the system as the need arises. New application programs may also have to be written to handle new rules in the university. Thus, as time goes by, the system acquires more files and more application programs.
+Programmers develop these application programs to meet the needs of the university, and new application programs are added to the system as the need arises. New application programs may also have to be written to handle new rules in the university. Thus, as time goes by, the system acquires more files and more application programs.  
+
+This typical **file-processing system** is supported by a conventional operating system. The system stores permanent records in various files, and it needs different application programs to extract records from, and add records to, the appropriate files.

@@ -45,3 +45,6 @@ Keeping organizational information in a file-processing system has a number of m
   - Atomicity problems.
   - Concurrent-access anomalies.
   - Security problems.
+
+### View of Data
+A database system is a collection of interrelated data and a set of programs that allow users to access and modify these data. A major purpose of a database system is to provide users with an *abstract* view of the data. That is, the system hides certain details of how the data are stored and maintained.

@@ -97,3 +97,8 @@ At the logical level, each such record is described by a type definition, as in 
 `instructor` record must appear in the department table is an example of such an interrelationship. Programmers using a programming language work at this level of abstraction. Similarly, database administrators usually work at this level of abstraction.  
 
 Finally, at the view level, computer users see a set of application programs that hide details of the data types. At the view level, several views of the database are defined, and a database user sees some or all of these views. In addition to hiding details of the logical level of the database, the views also provide a security mechanism to prevent users from accessing certain parts of the database. For example, clerks in the university registrar office can see only that part of the database that has information about students; they cannot access information about salaries of instructors.
+
+### Instances and Schemas:
+Databases change over time as information is inserted and deleted. The collection of information stored in the database
+at a particular moment is called an **instance** of the database. The overall design of the database is called the
+database **schema**. The concept of database schemas and instances can be understood by analogy to a program written in a programming language. A database schema corresponds to the variable declarations (along with associated type definitions) in a program. Each variable has a particular value at a given instant. The values of the variables in a program at a point in time correspond to an *instance* of a database schema.

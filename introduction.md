@@ -88,4 +88,7 @@ This code defines a new record type called instructor with four fields. Each fie
 it. For example, **char**(20) specifies a string with 20 characters, while **numeric**(8,2) specifies a number with 8 digits, two of which are to the right of the decimal point. A university organization may have several such record types, including:
   - *department*, with fields *dept_name, building*, and *budget*.
   - *course*, with fields *course id, title, dept name*, and *credits*.
-  - *student*, with fields *ID, name, dept_name*, and *tot_cred*.
+  - *student*, with fields *ID, name, dept_name*, and *tot_cred*.  
+
+At the physical level, an instructor, department, or student record can be described as a block of consecutive bytes. The compiler hides this level of detail from programmers. Similarly, the database system hides many of the lowest-level storage details from database programmers. Database administrators, on the other hand, may be aware of certain details of the physical organization of the data. For example, there are many possible ways to store tables in files. One way is to store a table as a sequence of records in a file, with a special character (such as a comma) used to delimit the different attributes of a record, and another special character (such as a new-line character) may be used to delimit records. If all attributes have fixed length, the lengths of attributes may be stored separately, and delimiters may be omitted from the file. Variable length attributes could be handled by storing the length, followed by the data. Databases use a type of data
+structure called an index to support efficient retrieval of records; these too form part of the physical level.

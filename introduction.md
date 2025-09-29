@@ -107,3 +107,5 @@ Database systems have several schemas, partitioned according to the levels of ab
 design at the logical level. A database may also have several schemas at the view level, sometimes called **subschemas**, that describe different views of the database.  
 
 Of these, the logical schema is by far the most important in terms of its effect on application programs, since programmers construct applications by using the logical schema. The physical schema is hidden beneath the logical schema and can usually be changed easily without affecting application programs. Application programs are said to exhibit physical data independence if they do not depend on the physical schema and thus need not be rewritten if the physical schema changes.  
+
+We also note that it is possible to create schemas that have problems, such as unnecessarily duplicated information. For example, suppose we store the department budget as an attribute of the `instructor` record. Then, whenever the value of the `budget` for a department (say the Physics department) changes, that change must be reflected in the records of all instructors associated with the department.

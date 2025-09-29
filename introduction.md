@@ -102,5 +102,8 @@ Finally, at the view level, computer users see a set of application programs tha
 Databases change over time as information is inserted and deleted. The collection of information stored in the database
 at a particular moment is called an **instance** of the database. The overall design of the database is called the
 database **schema**. The concept of database schemas and instances can be understood by analogy to a program written in a programming language. A database schema corresponds to the variable declarations (along with associated type definitions) in a program. Each variable has a particular value at a given instant. The values of the variables in a program at a point in time correspond to an *instance* of a database schema.  
-&nbsp;&nbsp;&nbsp;&nbsp;Database systems have several schemas, partitioned according to the levels of abstraction. The **physical schema** describes the database design at the physical level, while the **logical schema** describes the database
-design at the logical level. A database may also have several schemas at the view level, sometimes called **subschemas**, that describe different views of the database.
+
+Database systems have several schemas, partitioned according to the levels of abstraction. The **physical schema** describes the database design at the physical level, while the **logical schema** describes the database
+design at the logical level. A database may also have several schemas at the view level, sometimes called **subschemas**, that describe different views of the database.  
+
+Of these, the logical schema is by far the most important in terms of its effect on application programs, since programmers construct applications by using the logical schema. The physical schema is hidden beneath the logical schema and can usually be changed easily without affecting application programs. Application programs are said to exhibit physical data independence if they do not depend on the physical schema and thus need not be rewritten if the physical schema changes.  

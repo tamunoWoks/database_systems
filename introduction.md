@@ -66,4 +66,7 @@ Object-oriented programming (especially in Java, C++, or C#) has become the domi
 ### Data Abstraction:
 For a system to be usable, it must retrieve data efficiently. The need for efficiency has led database system developers to use complex data structures to represent data in the database. Developers hide the complexity from users through several levels of **data abstraction**, to simplify users' interactions with the system:
   - **Physical level:**  
-The lowest level of abstraction describes how the data are actually stored. The physical level describes complex low-level data structures in detail.
+The lowest level of abstraction describes *how* the data are actually stored. The physical level describes complex low-level data structures in detail.
+  - **Logical level:**  
+The next-higher level of abstraction describes *what* data are stored in the database, and what relationships exist among those data. The logical level thus describes the entire database in terms of a small number of relatively simple structures. Although implementation of the simple structures at the logical level may involve complex physical-level structures, the
+user of the logical level does not need to be aware of this complexity. This is referred to as **physical data independence**. Database administrators, who must decide what information to keep in the database, use the logical level of abstraction.

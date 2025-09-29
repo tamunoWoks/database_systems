@@ -21,3 +21,9 @@ authorization**, which allows deletion of data. We may assign the user all, none
 The processing of DDL statements, just like those of any other programming language, generates some output. The output of the DDL is placed in the **data dictionary**, which contains **metadata**. The data dictionary is considered to be a special type of table that can be accessed and updated only by the database system itself (not a regular user). The database system consults the data dictionary before reading or modifying actual data.
 #### The SQL Data-Definition Language:
 SQL provides a rich DDL that allows one to define tables with data types and integrity constraints. For instance, the following SQL DDL statement defines the `department` table:
+```sql
+CREATE TABLE department
+  (dept_name char (20),
+  building char (15),
+  budget numeric (12,2));
+```

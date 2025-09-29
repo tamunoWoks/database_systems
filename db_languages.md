@@ -27,3 +27,6 @@ CREATE TABLE department
   building char (15),
   budget numeric (12,2));
 ```
+Execution of the preceding DDL statement creates the `department` table with three columns: `dept_name`, `building`, and `budget`, each of which has a specific data type associated with it.  
+
+The SQL DDL also supports a number of types of integrity constraints. For example, one can specify that the `dept_name` attribute value is a `primary key`, ensuring that no two departments can have the same department name. As another example, one can specify that the `dept_name` attribute value appearing in any `instructor` record must also appear in the `dept_name` attribute of some record of the `department` table.

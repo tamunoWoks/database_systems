@@ -86,6 +86,6 @@ type instructor = record
 ```
 This code defines a new record type called instructor with four fields. Each field has a name and a type associated with
 it. For example, **char**(20) specifies a string with 20 characters, while **numeric**(8,2) specifies a number with 8 digits, two of which are to the right of the decimal point. A university organization may have several such record types, including:
-  - department, with fields dept_name, building, and budget.
-  - course, with fields course id, title, dept name, and credits.
-  - student, with fields ID, name, dept_name, and tot_cred.
+  - *department*, with fields *dept_name, building*, and *budget*.
+  - *course*, with fields *course id, title, dept name*, and *credits*.
+  - *student*, with fields *ID, name, dept_name*, and *tot_cred*.

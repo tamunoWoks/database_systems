@@ -51,4 +51,7 @@ A database system is a collection of interrelated data and a set of programs tha
 
 ### Data Models:
 Underlying the structure of a database is the **data model**: a collection of conceptual tools for describing data, data
-relationships, data semantics, and consistency constraints. 
+relationships, data semantics, and consistency constraints.  
+&nbsp;&nbsp;&nbsp;&nbsp;Data models can be classified into four different categories:
+  - **Relational Model:** The relational model uses a collection of tables to represent both data and the relationships among those data. Each table has multiple columns, and each column has a unique name. Tables are also known as **relations**. The relational model is an example of a record-based model. Record-based models are so named because the database is structured in fixed-format records of several types. Each table contains records of a particular type. Each record type defines a fixed number of fields, or attributes. The columns of the table correspond to the attributes of the
+record type. The relational data model is the most widely used data model, and a vast majority of current database systems are based on the relational model.

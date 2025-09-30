@@ -54,4 +54,11 @@ from instructor
 where instructor.dept_name = 'History';
 ```
 The query specifies that those rows from the table instructor where the `dept_name` is `History` must be retrieved, and the
-name attribute of these rows must be displayed. The result of executing this query is a table with a single column labeled `name` and a set of rows, each of which contains the name of an instructor whose `dept_name` is `History`.
+name attribute of these rows must be displayed. The result of executing this query is a table with a single column labeled `name` and a set of rows, each of which contains the name of an instructor whose `dept_name` is `History`.  
+
+Queries may involve information from more than one table. For instance, the following query finds the instructor ID and department name of all instructors associated with a department with a budget of more than $95,000.
+```sql
+select instructor.ID, department.dept_name
+from instructor, department
+where instructor.dept_name = department.dept_name and department.budget > 95000;
+```

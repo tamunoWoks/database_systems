@@ -62,3 +62,6 @@ select instructor.ID, department.dept_name
 from instructor, department
 where instructor.dept_name = department.dept_name and department.budget > 95000;
 ```
+
+#### Database Access from Application Programs:
+SQL does not support actions such as input from users, output to displays, or communication over the network. Such computations and actions must be written in a host language, such as C/C++, Java, or Python, with embedded SQL queries that access the data in the database.

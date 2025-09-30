@@ -31,3 +31,8 @@ The storage manager components include:
     - **Data files**, which store the database itself.
     - **Data dictionary**, which stores metadata about the structure of the database, in particular the schema of the database.
     - **Indices**, which can provide fast access to data items. Like the index in this textbook, a database index provides pointers to those data items that hold a particular value. For example, we could use an index to find the *instructor* record with a particular *ID*, or all *instructor* records with a particular *name*.
+
+2. **The Query Processor:**  
+The query processor components include:
+    - **DDL interpreter**, which interprets DDL statements and records the definitions in the data dictionary.
+    - **DML compiler**, which translates DML statements in a query language into an evaluation plan consisting of low-level instructions that the query-evaluation engine understands.

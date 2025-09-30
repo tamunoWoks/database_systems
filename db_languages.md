@@ -47,4 +47,11 @@ There are basically two types of data-manipulation language:
 The levels of abstraction earlier discussed apply not only to defining or structuring data, but also to manipulating data. At the physical level, we must define algorithms that allow efficient access to data. At higher levels of abstraction, we emphasize ease of use. The goal is to allow humans to interact efficiently with the system.  
 
 #### The SQL Data-Manipulation Language:
-The SQL query language is nonprocedural. A query takes as input several tables (possibly only one) and always returns a single table.
+The SQL query language is nonprocedural. A query takes as input several tables (possibly only one) and always returns a single table. Here is an example of an SQL query that finds the names of all instructors in the History department:
+```sql
+select instructor.name
+from instructor
+where instructor.dept_name = 'History';
+```
+The query specifies that those rows from the table instructor where the `dept_name` is `History` must be retrieved, and the
+name attribute of these rows must be displayed. The result of executing this query is a table with a single column labeled `name` and a set of rows, each of which contains the name of an instructor whose `dept_name` is `History`.

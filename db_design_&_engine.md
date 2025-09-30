@@ -19,5 +19,10 @@ The storage manager is important because databases typically require a large amo
 
 While database engines were traditionally centralized computer systems, today parallel processing is key for handling very large amounts of data efficiently. Modern database engines pay a lot of attention to parallel data storage and parallel query processing.  
 
-1. **Storage Manager:**
+1. **Storage Manager:**  
 The **storage manager** is the component of a database system that provides the interface between the low-level data stored in the database and the application programs and queries submitted to the system. The storage manager is responsible for the interaction with the file manager. The raw data are stored on the disk using the file system provided by the operating system. The storage manager translates the various DML statements into low-level filesystem commands. Thus, the storage manager is responsible for storing, retrieving, and updating data in the database.
+The storage manager components include:
+- **Authorization and integrity manager**, which tests for the satisfaction of integrity constraints and checks the authority of users to access data.
+- **Transaction manager**, which ensures that the database remains in a consistent (correct) state despite system failures, and that concurrent transaction executions proceed without conflicts.
+- **File manager**, which manages the allocation of space on disk storage and the data structures used to represent information stored on disk.
+- **Buffer manager**, which is responsible for fetching data from disk storage into main memory, and deciding what data to cache in main memory. The buffer manager is a critical part of the database system, since it enables the database to handle data sizes that are much larger than the size of main memory.

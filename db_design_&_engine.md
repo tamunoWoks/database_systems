@@ -25,4 +25,9 @@ The storage manager components include:
     - **Authorization and integrity manager**, which tests for the satisfaction of integrity constraints and checks the authority of users to access data.
     - **Transaction manager**, which ensures that the database remains in a consistent (correct) state despite system failures, and that concurrent transaction executions proceed without conflicts.
     - **File manager**, which manages the allocation of space on disk storage and the data structures used to represent information stored on disk.
-    - **Buffer manager**, which is responsible for fetching data from disk storage into main memory, and deciding what data to cache in main memory. The buffer manager is a critical part of the database system, since it enables the database to handle data sizes that are much larger than the size of main memory.
+    - **Buffer manager**, which is responsible for fetching data from disk storage into main memory, and deciding what data to cache in main memory. The buffer manager is a critical part of the database system, since it enables the database to handle data sizes that are much larger than the size of main memory.  
+
+The storage manager implements several data structures as part of the physical system implementation:
+    - **Data files**, which store the database itself.
+    - **Data dictionary**, which stores metadata about the structure of the database, in particular the schema of the database.
+    - **Indices**, which can provide fast access to data items. Like the index in this textbook, a database index provides pointers to those data items that hold a particular value. For example, we could use an index to find the *instructor* record with a particular *ID*, or all *instructor* records with a particular *name*.

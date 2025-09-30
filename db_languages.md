@@ -42,4 +42,6 @@ There are basically two types of data-manipulation language:
 1. **Procedural DMLs:** require a user to specify what data are needed and how to get those data.
 2. **Declarative DMLs:** (also referred to as *nonprocedural DMLs*) require a user to specify what data are needed without specifying how to get those data.
 
-**Query:** A **query** is a statement requesting the retrieval of information. The portion of a DML that involves information retrieval is called a *query language*.
+**Query:** A *query* is a statement requesting the retrieval of information. The portion of a DML that involves information retrieval is called a *query language*.  
+
+The levels of abstraction earlier discussed apply not only to defining or structuring data, but also to manipulating data. At the physical level, we must define algorithms that allow efficient access to data. At higher levels of abstraction, we emphasize ease of use. The goal is to allow humans to interact efficiently with the system.

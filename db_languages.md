@@ -38,8 +38,8 @@ A data-manipulation language (DML) is a language that enables users to access or
 - Deletion of information from the database.
 - Modification of information stored in the database.  
 
-#### Query: 
-A **query** is a statement requesting the retrieval of information. The portion of a DML that involves information retrieval is called a *query language*.
 There are basically two types of data-manipulation language:
 1. **Procedural DMLs:** require a user to specify what data are needed and how to get those data.
 2. **Declarative DMLs:** (also referred to as *nonprocedural DMLs*) require a user to specify what data are needed without specifying how to get those data.
+
+**Query:** A **query** is a statement requesting the retrieval of information. The portion of a DML that involves information retrieval is called a *query language*.

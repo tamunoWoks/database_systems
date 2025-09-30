@@ -36,4 +36,8 @@ A data-manipulation language (DML) is a language that enables users to access or
 - Retrieval of information stored in the database.
 - Insertion of new information into the database.
 - Deletion of information from the database.
-- Modification of information stored in the database.
+- Modification of information stored in the database.  
+
+There are basically two types of data-manipulation language:
+1. **Procedural DMLs** require a user to specify what data are needed and how to get those data.
+2. **Declarative DMLs** (also referred to as *nonprocedural DMLs*) require a user to specify what data are needed without specifying how to get those data.

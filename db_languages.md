@@ -30,3 +30,10 @@ CREATE TABLE department
 Execution of the preceding DDL statement creates the `department` table with three columns: `dept_name`, `building`, and `budget`, each of which has a specific data type associated with it.  
 
 The SQL DDL also supports a number of types of integrity constraints. For example, one can specify that the `dept_name` attribute value is a `primary key`, ensuring that no two departments can have the same department name. As another example, one can specify that the `dept_name` attribute value appearing in any `instructor` record must also appear in the `dept_name` attribute of some record of the `department` table.
+
+### Data-Manipulation Language:
+A data-manipulation language (DML) is a language that enables users to access or manipulate data as organized by the appropriate data model. The types of access are:
+- Retrieval of information stored in the database.
+- Insertion of new information into the database.
+- Deletion of information from the database.
+- Modification of information stored in the database.

@@ -64,4 +64,8 @@ where instructor.dept_name = department.dept_name and department.budget > 95000;
 ```
 
 #### Database Access from Application Programs:
-SQL does not support actions such as input from users, output to displays, or communication over the network. Such computations and actions must be written in a host language, such as C/C++, Java, or Python, with embedded SQL queries that access the data in the database.
+SQL does not support actions such as input from users, output to displays, or communication over the network. Such computations and actions must be written in a host language, such as C/C++, Java, or Python, with embedded SQL queries that access the data in the database.  
+
+**Application programs** are programs that are used to interact with the database in this fashion. Examples in a university system are programs that allow students to register for courses, generate class rosters, calculate student GPA, generate payroll checks, and perform other tasks.  
+
+To access the database, DML statements need to be sent from the host to the database where they will be executed. This is  mostly done by using an application-program interface (set of procedures) that can be used to send DML and DDL statements to the database and retrieve the results. The Open Database Connectivity (ODBC) standard defines application program interfaces for use with C and several other languages. The Java Database Connectivity (JDBC) standard defines a corresponding interface for the Java language.

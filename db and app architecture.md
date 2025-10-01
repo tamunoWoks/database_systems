@@ -7,3 +7,6 @@ The centralized architecture shown in the figure is applicable to *shared-memory
 &nbsp;&nbsp;&nbsp;&nbsp;To scale up to even larger data volumes and even higher processing speeds, *parallel databases* are designed to run on a cluster consisting of multiple machines. Further, *distributed databases* allow data storage and query processing across multiple geographically separated machines.  
 
 Let's now consider the architecture of applications that use databases as their backend. Database applications can be partitioned into two or three parts, as shown below:
+
+![DB architecture tiers](https://github.com/tamunoWoks/database_systems/blob/main/images/arch%20tier.PNG "Two & Three tier DB architecture")  
+

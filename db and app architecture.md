@@ -8,5 +8,7 @@ The centralized architecture shown in the figure is applicable to *shared-memory
 
 Let's now consider the architecture of applications that use databases as their backend. Database applications can be partitioned into two or three parts, as shown below:
 
-![DB architecture tiers](https://github.com/tamunoWoks/database_systems/blob/main/images/arch%20tier.PNG "Two & Three tier DB architecture")  
+![DB architecture tiers](https://github.com/tamunoWoks/database_systems/blob/main/images/arch%20tier.PNG "Two & Three tier DB architecture")   
 
+Earlier-generation database applications used a **two-tier architecture**, where the application resides at the client machine, and invokes database system functionality at the server machine through query language statements.  
+&nbsp;&nbsp;&nbsp;&nbsp;In contrast, modern database applications use a **three-tier architecture**, where the client machine acts as merely a front end and does not contain any direct database calls; web browsers and mobile applications are the most commonly used application clients today. The front end communicates with an **application server**. The application server, in turn, communicates with a database system to access data. The **business logic** of the application, which says what actions to carry out under what conditions, is embedded in the application server, instead of being distributed across multiple clients. Three-tier applications provide better security as well as better performance than two-tier applications.

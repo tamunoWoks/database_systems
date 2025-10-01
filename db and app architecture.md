@@ -4,4 +4,6 @@ The below figure shows the architecture of a database system that runs on a cent
 ![DB system structure](https://github.com/tamunoWoks/database_systems/blob/main/images/DB%20architecture.jpg "Database Architecture")
 
 The centralized architecture shown in the figure is applicable to *shared-memory* server architectures, which have multiple CPUs and exploit parallel processing, but all the CPUs access a common shared memory.  
-&nbsp;&nbsp;&nbsp;&nbsp;To scale up to even larger data volumes and even higher processing speeds, *parallel databases* are designed to run on a cluster consisting of multiple machines. Further, *distributed databases* allow data storage and query processing across multiple geographically separated machines.
+&nbsp;&nbsp;&nbsp;&nbsp;To scale up to even larger data volumes and even higher processing speeds, *parallel databases* are designed to run on a cluster consisting of multiple machines. Further, *distributed databases* allow data storage and query processing across multiple geographically separated machines.  
+
+Let's now consider the architecture of applications that use databases as their backend. Database applications can be partitioned into two or three parts, as shown below:

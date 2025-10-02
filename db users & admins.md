@@ -16,3 +16,4 @@ As an example, consider a student, who during class registration period, wishes 
 One of the main reasons for using DBMSs is to have central control of both the data and the programs that access those data. A person who has such central control over the system is called a **Database administrator (DBA)**, and the functions of a DBA include:  
   - **Schema definition:** The DBA creates the original database schema by executing a set of data definition statements in the DDL.
   - **Storage structure and access-method definition:** The DBA may specify some parameters pertaining to the physical organization of the data and the indices to be created.
+  - **Schema and physical-organization modification:** The DBA carries out changes to the schema and physical organization to reflect the changing needs of the organization, or to alter the physical organization to improve performance.

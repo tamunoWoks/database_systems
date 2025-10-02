@@ -11,3 +11,6 @@ As an example, consider a student, who during class registration period, wishes 
   These are computer professionals who write application programs. Application programmers can choose from many tools to develop user interfaces.
 3. **Sophisticated Users:**  
   These users interact with the system without writing programs. Instead, they form their requests either using a database query language or by using tools such as data analysis software. Analysts who submit queries to explore data in the database fall in this category.
+
+### Database Administrator:
+One of the main reasons for using DBMSs is to have central control of both the data and the programs that access those data. A person who has such central control over the system is called a **Database administrator (DBA)**. The functions of a DBA include:  

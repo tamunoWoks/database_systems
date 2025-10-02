@@ -18,3 +18,7 @@ One of the main reasons for using DBMSs is to have central control of both the d
   - **Storage structure and access-method definition:** The DBA may specify some parameters pertaining to the physical organization of the data and the indices to be created.
   - **Schema and physical-organization modification:** The DBA carries out changes to the schema and physical organization to reflect the changing needs of the organization, or to alter the physical organization to improve performance.
   - **Granting of authorization for data access:** By granting different types of authorization, the database administrator can regulate which parts of the database various users can access. The authorization information is kept in a special system structure that the database system consults whenever a user tries to access the data in the system.
+  - **Routine maintenance:** Examples of the database administrator's routine maintenance activities are:
+    - Periodically backing up the database onto remote servers, to prevent loss of data in case of disasters such as flooding.
+    - Ensuring that enough free disk space is available for normal operations, and upgrading disk space as required.
+    - Monitoring jobs running on the database and ensuring that performance is not degraded by very expensive tasks submitted by some users.

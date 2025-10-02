@@ -17,3 +17,4 @@ One of the main reasons for using DBMSs is to have central control of both the d
   - **Schema definition:** The DBA creates the original database schema by executing a set of data definition statements in the DDL.
   - **Storage structure and access-method definition:** The DBA may specify some parameters pertaining to the physical organization of the data and the indices to be created.
   - **Schema and physical-organization modification:** The DBA carries out changes to the schema and physical organization to reflect the changing needs of the organization, or to alter the physical organization to improve performance.
+  - **Granting of authorization for data access:** By granting different types of authorization, the database administrator can regulate which parts of the database various users can access. The authorization information is kept in a special system structure that the database system consults whenever a user tries to access the data in the system.
